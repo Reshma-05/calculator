@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-def.home(request):
+def home(request):
     result = None
     if request.method == 'POST':
         a = int(request.POST.get('Num1'))
